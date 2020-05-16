@@ -1,21 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { DefaultModule } from '../app/layout/default/default.module'
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule } from '@angular/material'
-import { RouterModule } from '@angular/router';
-import { MatDividerModule, MatListModule } from '@angular/material';
-
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { DefaultModule } from "../app/layout/default/default.module";
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatSidenavModule } from "@angular/material";
+import { RouterModule } from "@angular/router";
+import { MatDividerModule, MatListModule } from "@angular/material";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-
-
-
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,10 +18,9 @@ import { MatDividerModule, MatListModule } from '@angular/material';
     MatSidenavModule,
     MatDividerModule,
     MatListModule,
-    RouterModule
-
+    RouterModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
